@@ -359,7 +359,7 @@
         {
             var filePath = Path.GetTempFileName();
 
-            return new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite, FileShare.None, 8192, true);
+            return new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite, FileShare.None, 8192, false);
         }
 
         private Stream CreateDefaultMemoryStream(long expectedLength)
